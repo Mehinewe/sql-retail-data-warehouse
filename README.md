@@ -34,10 +34,10 @@ These insights empower stakeholders with key business metrics, enabling strategi
 This project is licensed under the [MIT License]. You are free to use, modify, and share this project with proper attribution.
 
 ## 🗒️ Data Source & Attribution
-**Data Source**: Forage (educational dataset).
+**Data Source**: Forage (educational dataset).  
 **Note**: All analysis, data modeling, and visualizations are my own work.
 
 ## 🌟 About Me
-Hi there, I’m Mehinewe Kedewouli 👋
+Hi there, I’m Mehinewe Kedewouli 👋  
 I’m a data analyst who help you know what happened, why it happenned, what will happen and what to do - with data.
 
