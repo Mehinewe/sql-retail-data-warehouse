@@ -13,7 +13,7 @@ IF OBJECT_ID ('bronze.pos_transaction', 'U') IS NOT NULL
 	DROP TABLE bronze.pos_transaction;
 
 CREATE TABLE bronze.pos_transaction(
-date	DATETIME,
+date	NVARCHAR(50),
 store_nbr	NVARCHAR(50),
 lylty_card_nbr	NVARCHAR(50),
 txn_id NVARCHAR(50),
