@@ -1,0 +1,36 @@
+/*
+===============================================================================
+DDL Script: Create Silver Tables
+===============================================================================
+Script Purpose:
+    This script creates tables in the 'silver' schema, dropping existing tables 
+    if they already exist.
+	  Run this script to re-define the DDL structure of 'silver' Tables
+===============================================================================
+*/
+
+IF OBJECT_ID ('silver.pos_transaction', 'U') IS NOT NULL
+	DROP TABLE silver.pos_transaction;
+
+CREATE TABLE silver.pos_transaction(
+date	DATETIME,
+store_nbr	INT,
+lylty_card_nbr	INT,
+txn_id INT,
+prod_nbr INT,
+prod_name NVARCHAR(50),
+prod_qty	INT,
+tot_sales DECIMAL(18,2),
+dwh_create_date DATETIME2 DEFAULT GETDATE()
+);
+
+
+IF OBJECT_ID ('silver.pos_purchase_behavior', 'U') IS NOT NULL
+	DROP TABLE silver.pos_purchase_behavior;
+
+CREATE TABLE silver.pos_purchase_behavior(
+lylty_card_nbr NVARCHAR(50),	
+lifestage	NVARCHAR(50),
+premium_customer NVARCHAR(50),
+dwh_create_date DATETIME2 DEFAULT GETDATE()
+);
